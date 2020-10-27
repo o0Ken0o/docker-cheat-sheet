@@ -21,6 +21,11 @@ Assume we have a project structure like this.
 ```
 
 ```zsh
+# man-page of a docker-compose command
+$ docker-compose up --help
+```
+
+```zsh
 # build the image
 # exec under root dir
 $ docker-compose build
@@ -39,8 +44,13 @@ $ docker ps -a
 ```
 
 ```zsh
-# start the container in detached mode
+# Builds, (re)creates, starts, and attaches to containers for a service.
 $ docker-compose up -d
+```
+
+```zsh
+# start the container(s)
+$ docker-compose start
 ```
 
 ```zsh
